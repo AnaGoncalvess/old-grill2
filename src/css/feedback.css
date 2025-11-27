@@ -1,0 +1,306 @@
+body{
+    background-color: #f7f0e0;
+}
+
+.cabecalho {
+  background-color: #6c0e16;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  margin-left: 250px;
+  width: 100px;
+}
+
+.cabecalho .navecacao .menu {
+  display: flex;
+}
+
+.cabecalho .navecacao .menu .item {
+  display: flex;
+  padding: 10px;
+  margin: 15px;
+  font-size: 14px;
+  color: #f7f0e0;
+  border: solid #f7f0e0;
+  border-radius: 35px;
+  font-family: "Quicksand", sans-serif;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.cabecalho .navecacao .menu .item:hover {
+  transform: scale(1.2); /* Aumenta 20% */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.cabecalho .redes-sociais {
+  display: flex;
+  margin-right: 250px;
+}
+
+.cabecalho .redes-sociais .imagem {
+  height: 28px;
+}
+
+.cabecalho .redes-sociais .imagem-relogio {
+ height: 29px;
+}
+
+ .feed {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+ .feed .titulo5 {
+  font-family: "Linden Hill", serif;
+  font-size: 75px;
+  color: #6c0e16;
+  margin-top: 75px;
+  padding: 0 70px;
+}
+
+ .feed .texto5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1400px;
+  padding: 20px 310px 80px 310px;
+  font-size: 30px;
+  font-family: "Linden Hill", serif;
+  text-align: center;
+  color: #6c0e16;
+}
+
+
+.depoimentos {
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+  max-width: 900px;
+  margin: 2rem auto 3rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+  
+
+.depoimento:hover{
+    transform : scale(1.2);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 1);
+}
+
+.depoimento {
+  background: #f7f0e0;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  font-family: "Quicksand", sans-serif;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  font-size: 20px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.depoimento span {
+  display: block;
+  margin-top: 0.5rem;
+  font-weight: 700;
+  text-align: right;
+  color: #6b0e16;
+  
+}
+}
+
+.depoimento:hover{
+  transform: scale(1.1);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+
+}
+
+
+.depoimentos .titulo {
+  /* text-align: center; */
+  
+  margin-bottom: 2rem;
+  color: #6b0e16;
+font-family: "Linden Hill", serif; 
+font-size: 35px;
+}
+
+
+
+.cabecalho2 {
+  background-color: #6c0e16;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo2 {
+  margin-left: 180px;
+  width: 100px;
+}
+
+.cabecalho2 .navecacao2 .menu2 {
+  display: flex;
+}
+
+.cabecalho2 .navecacao2 .menu2 .item2 {
+  display: flex;
+  padding: 10px;
+  margin: 15px;
+  font-size: 14px;
+  color: #f7f0e0;
+  border: solid #f7f0e0;
+  border-radius: 35px;
+  font-family: "Quicksand", sans-serif;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.cabecalho2 .navecacao2 .menu2 .item2:hover {
+  transform: scale(1.2);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.cabecalho2 .redes-sociais2 {
+  display: flex;
+  margin-right: 180px;
+  padding: 43px 0 0 0;
+}
+
+.cabecalho2 .redes-sociais2 .imagem2 {
+  height: 32px;
+}
+/* Estilo para o ícone SVG do carrinho no cabeçalho */
+.header-cart-btn svg {
+    height: 28px;
+    width: 28px;
+    fill: #f7f0e0;
+}
+
+
+/* ESTILO DO RELÓGIO ADICIONADO */
+.header-clock-btn svg {
+    height: 28px;
+    width: 28px;
+    fill: #f7f0e0;
+    transition: transform 0.3s ease;
+}
+.header-clock-btn:hover svg {
+    transform: scale(1.1);
+}
+
+/* ESTILOS DE MODAL GENÉRICOS ADICIONADOS */
+.hidden { display: none !important; }
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+    transition: opacity 0.3s ease;
+}
+.modal-content {
+    background: #f7f0e0;
+    padding: 30px 40px;
+    border-radius: 15px;
+    max-width: 600px;
+    width: 90%;
+    position: relative;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+.fechar-modal {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #6c0e16;
+}
+.modal-content h2 {
+    font-family: "Linden Hill", serif;
+    font-size: 32px;
+    color: #6c0e16;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/* ESTILOS DO MODAL DE HORÁRIOS ADICIONADOS */
+#detalhes-horarios-conteudo {
+    font-family: "Quicksand", sans-serif;
+    color: #333;
+    max-height: 60vh;
+    overflow-y: auto;
+}
+
+#detalhes-horarios-conteudo h3 {
+    font-family: "Linden Hill", serif;
+    font-size: 1.5em;
+    color: #6c0e16;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+#detalhes-horarios-conteudo h3:first-of-type {
+    margin-top: 0;
+}
+#detalhes-horarios-conteudo p {
+    font-size: 1.1em;
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+#detalhes-horarios-conteudo p strong {
+    color: #6c0e16;
+    min-width: 140px; /* Alinha os valores */
+    display: inline-block;
+}
+#detalhes-horarios-conteudo p em {
+    font-style: italic;
+    color: #555;
+    font-size: 0.9em;
+}
+#detalhes-horarios-conteudo .icone-loc{
+  height: 19px;
+  margin-left: 15px;
+  margin-top: 2px;
+}
+
+/* =========================================== */
+/* === BOTÃO DE RESERVA NO MODAL HORÁRIOS === */
+/* =========================================== */
+
+#detalhes-horarios-conteudo #btn-ir-para-reserva {
+    width: 100%;
+    background-color: #2a9d8f;
+    border: none;
+    border-radius: 10px;
+    height: 50px;
+    color: #fff;
+    font-size: 18px;
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 25px; /* Espaçamento */
+    text-align: center;
+    padding-top: 12px; /* Ajuste vertical do texto do link */
+    box-sizing: border-box; /* Garante que o padding não estoure a altura */
+    text-decoration: none; /* Remove sublinhado do link */
+    display: block; /* Faz o <a> ocupar a largura total */
+}
+
+#detalhes-horarios-conteudo #btn-ir-para-reserva:hover {
+    background-color: #268a7e;
+    transform: none;
+}

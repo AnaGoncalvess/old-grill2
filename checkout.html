@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalizar Compra - OLD GRILL</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Linden+Hill:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/checkout.css">
+    <link rel="stylesheet" href="./src/css/carnes.css"> 
+    <link rel="stylesheet" href="./src/css/responsive.css">
+</head>
+<body>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="icon-cart" viewBox="0 0 24 24">
+            <path
+                d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12L8.1 13h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.9 2 1.99 2 2-.9 2-2-.9-2-2-2z" />
+        </symbol>
+    </svg>
+    <header class="cabecalho">
+        <a href="./index.html">
+            <img class="logo" src="./src/IMG/Group 9.png" alt="Logo Old Grill">
+        </a>
+        <nav class="navecacao">
+            <ul class="menu">
+                <li><a href="./index.html#sobre-nós" class="item">Sobre nós</a></li>
+                <li><a href="./index.html#especiarias" class="item">Especiarias</a></li>
+                <li><a href="./carnes.html" class="item">Carnes</a></li>
+                <li><a href="./cadastro.html" class="item">Cadastro</a></li>
+                <li><a href="./feedback.html" class="item">Feedback</a></li>
+            </ul>
+        </nav>
+        <div class="redes-sociais">
+            <a href="./carnes.html?abrirCarrinho=true" class="header-cart-btn"><svg class="imagem">
+                    <use xlink:href="#icon-cart"></use>
+                </svg></a>
+            <a href="#"><img src="./src/IMG/GARFO (1).png" alt="divisor" class="imagem"></a>
+            <a
+                href="https://open.spotify.com/playlist/1IyykrGQHQ0dIYMl7nitM7?si=8f3OXlMSTPCOeReiNOiH6A&pi=e4uI6Dh0RAKU8">
+                <img src="./src/IMG/spotify-logo.png" alt="facebook" class="imagem" />
+            </a>
+            <a href="#"><img src="./src/IMG/GARFO (1).png" alt="divisor" class="imagem"></a>
+             <a href="https://www.instagram.com/old_grill2.3?igsh=MXRqMnJ6YmE2ZHVsaA%3D%3D&utm_source=qr">
+        <img src="./src/IMG/instagram (1) 1.png" alt="instagram" class="imagem" />
+      </a>
+            <a href="#"><img src="./src/IMG/GARFO (1).png" alt="divisor" class="imagem"></a>
+            <a href="https://wa.me/5535991811585"><img src="./src/IMG/whatsapp (3) 1.png" alt="whatsapp"
+                    class="imagem"></a>
+            <a href="#"><img src="./src/IMG/GARFO (1).png" alt="divisor" class="imagem"></a>
+            <a href="#" id="btn-horarios" class="header-clock-btn"><img src="./src/IMG/clock.png" alt=""
+                    class="imagem-relogio"></a>
+        </div>
+    </header>
+
+    <main class="conteudo-principal">
+        <div class="checkout-container">
+            <div class="checkout-form">
+                <form id="form-finalizar-pedido">
+                    <section id="secao-endereco"> 
+                        <h2>Endereço de Entrega</h2>
+                        <div class="caixa">
+                            <label class="nomel" for="cep">CEP:</label>
+                            <input class="textol" type="text" id="cep" placeholder="00000-000" required>
+                        </div>
+                        <div class="caixa">
+                            <label class="nomel" for="rua">Rua / Avenida:</label>
+                            <input class="textol" type="text" id="rua" required>
+                        </div>
+                        <div class="caixa-grupo">
+                            <div class="caixa">
+                                <label class="nomel" for="numero">Número:</label>
+                                <input class="textol" type="text" id="numero" required>
+                            </div>
+                            <div class="caixa">
+                                <label class="nomel" for="bairro">Bairro:</label>
+                                <input class="textol" type="text" id="bairro" required>
+                            </div>
+                        </div>
+                        <div class="caixa">
+                            <label class="nomel" for="complemento">Complemento (Opcional):</label>
+                            <input class="textol" type="text" id="complemento" placeholder="Apto, bloco, referência">
+                        </div>
+                    </section>
+
+                    <section>
+                        <h2>Forma de Pagamento</h2>
+                        <div class="opcoes-pagamento">
+                            <div class="opcao-radio">
+                                <input type="radio" id="cartao" name="pagamento" value="cartao" checked>
+                                <label for="cartao" id="label-cartao">
+                                    <span class="opcao-titulo">Cartão de Crédito</span>
+                                    <span class="opcao-detalhe" id="detalhe-cartao">Adicionar dados do cartão</span>
+                                </label>
+                            </div>
+                            <div class="opcao-radio">
+                                <input type="radio" id="pix" name="pagamento" value="pix">
+                                <label for="pix">Pix</label>
+                            </div>
+                            <div class="opcao-radio">
+                                <input type="radio" id="dinheiro" name="pagamento" value="dinheiro">
+                                <label for="dinheiro">Dinheiro (na entrega)</label>
+                            </div>
+                        </div>
+                    </section>
+
+                    <button class="botao" type="submit">Finalizar Pedido</button>
+                </form>
+            </div>
+
+            <div class="coluna-direita">
+                
+                <div class="resumo-pedido">
+                    <h2>Resumo da Compra</h2>
+                    <ul id="lista-resumo-carrinho"></ul>
+                    <div class="total-resumo">
+                        <span>Total:</span>
+                        <strong id="total-resumo-valor">R$ 0,00</strong>
+                    </div>
+                </div>
+                <section class="secao-observacoes">
+                    <h2>Método de Entrega</h2>
+                    <div class="opcoes-pagamento">
+                        <div class="opcao-radio">
+                            <input type="radio" id="entrega" name="metodo" value="entrega" checked>
+                            <label for="entrega">
+                                <span class="opcao-titulo">Entrega (Delivery)</span>
+                                <span class="opcao-detalhe" id="tempo-estimado-entrega">Tempo estimado: 45-60 min</span>
+                            </label>
+                        </div>
+                        <div class="opcao-radio">
+                            <input type="radio" id="retirada" name="metodo" value="retirada">
+                            <label for="retirada">
+                                <span class="opcao-titulo">Retirada no Local</span>
+                                <span class="opcao-detalhe" id="tempo-estimado-retirada">Tempo estimado: 20-30 min</span>
+                            </label>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="secao-observacoes">
+                    <h2>Observações</h2>
+                    <div class="caixa">
+                        <label class="nomel" for="observacoes">Alguma instrução especial?</label>
+                        <textarea class="textol" id="observacoes" rows="4" placeholder="Ex: Ponto da carne..."
+                            form="form-finalizar-pedido"></textarea>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+     <div id="modal-horarios" class="modal-overlay hidden">
+    <div class="modal-content">
+      <button id="fechar-modal-horarios" class="fechar-modal">×</button>
+      <h2>Horários & Localização</h2>
+      <div id="detalhes-horarios-conteudo">
+        <h3>Horários de Atendimento</h3>
+        <p><strong>Terça a Sexta:</strong> 18:00 - 22:30</p>
+        <p><strong>Sábado:</strong> 16:00 - 23:00</p>
+        <p><strong>Domingos e Feriados:</strong> 10:00 - 16:00</p>
+
+        <h3>Nossa Localização</h3>
+        <p>Rua da Costela, 123 - Bairro Brasa</p>
+        <p>Centro, Balneário Camboriú
+          <a
+            href="https://www.google.com.br/maps/place/Balne%C3%A1rio+Cambori%C3%BA,+SC/@-27.0057719,-48.6581834,13z/data=!3m1!4b1!4m15!1m8!3m7!1s0x94d8b616bc8c3663:0x888ea007f0e0e4f7!2sCentro,+Balne%C3%A1rio+Cambori%C3%BA+-+SC!3b1!8m2!3d-27.0011858!4d-48.6298047!16s%2Fg%2F1ymwj9fyf!3m5!1s0x94d8b65cc2e52aad:0x2dc004f5e6adebc4!8m2!3d-26.9979839!4d-48.63258!16s%2Fg%2F1ymvng0m1?hl=pt-BR&entry=ttu&g_ep=EgoyMDI1MTEwMi4wIKXMDSoASAFQAw%3D%3D"><img
+              class="icone-loc" src="./src/IMG/location (1).png" alt=""></a>
+        </p>
+        <p><em>(Estacionamento disponível no local)</em></p>
+        <a href="reserva.html" class="botao" id="btn-ir-para-reserva">Fazer Reserva</a>
+      </div>
+    </div>
+  </div>
+
+    <div id="modal-cartao-credito" class="modal-overlay hidden">
+        <div class="modal-content">
+            <button id="fechar-modal-cartao" class="fechar-modal">×</button>
+            <h2>Adicionar um cartão de crédito</h2>
+            <form id="form-cartao-credito">
+                <div class="caixa">
+                    <label class="nomel" for="cartao-numero">Número do cartão:</label>
+                    <input class="textol" type="text" id="cartao-numero" placeholder="0000 0000 0000 0000" required maxlength="16">
+                </div>
+                <div class="caixa">
+                    <label class="nomel" for="cartao-nome">Nome no cartão:</label>
+                    <input class="textol" type="text" id="cartao-nome" placeholder="Como aparece no cartão" required>
+                </div>
+                 <div class="caixa">
+                    <label class="nomel" for="cartao-bandeira">Bandeira:</label>
+                    <select class="textol" id="cartao-bandeira" required>
+                        <option value="" disabled selected>Selecione a bandeira</option>
+                        <option value="Visa">Visa</option>
+                        <option value="Mastercard">Mastercard</option>
+                        <option value="Elo">Elo</option>
+                        <option value="American Express">American Express</option>
+                        <option value="Outra">Outra</option>
+                    </select>
+                </div>
+
+                <div class="caixa hidden" id="caixa-outra-bandeira">
+                    <label class="nomel" for="cartao-outra-bandeira">Qual bandeira?</label>
+                    <input class="textol" type="text" id="cartao-outra-bandeira" placeholder="Ex: Hipercard">
+                </div>
+                <div class="caixa-grupo">
+                    <div class="caixa">
+                        <label class="nomel" for="cartao-validade">Validade:</label>
+                        <input class="textol" type="text" id="cartao-validade" placeholder="MM/AA" required maxlength="4">
+                    </div>
+                    <div class="caixa">
+                        <label class="nomel" for="cartao-cvv">Código de segurança (CVV):</label>
+                        <input class="textol" type="text" id="cartao-cvv" placeholder="123" required maxlength="3">
+                    </div>
+                </div>
+                <button class="botao" type="submit">Adicionar cartão</button>
+            </form>
+        </div>
+    </div>
+    
+    <div id="modal-opcoes-ponto" class="modal-overlay hidden">
+        <div class="modal-content">
+            <button id="fechar-modal-opcoes-ponto" class="fechar-modal">×</button>
+            <h2 id="modal-opcoes-titulo-ponto">Escolha o ponto</h2>
+            <form id="form-modal-opcoes-ponto">
+                <div id="modal-opcoes-lista-ponto" class="opcoes-pagamento">
+                    </div>
+                <input type="hidden" id="item-index-ponto" value="">
+                <button class="botao" type="submit" id="btn-confirmar-opcao-ponto">Confirmar</button>
+            </form>
+        </div>
+    </div>
+    <script src="./src/js/checkout.js"></script>
+    <script src="./src/js/modal-horarios.js"></script>
+</body>
+</html>

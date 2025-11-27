@@ -1,0 +1,499 @@
+.cabecalho {
+  background-color: #6c0e16;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  margin-left: 250px;
+  width: 100px;
+}
+
+.cabecalho .navecacao .menu {
+  display: flex;
+}
+
+.cabecalho .navecacao .menu .item {
+  display: flex;
+  padding: 10px;
+  margin: 15px;
+  font-size: 14px;
+  color: #f7f0e0;
+  border: solid #f7f0e0;
+  border-radius: 35px;
+  font-family: "Quicksand", sans-serif;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.cabecalho .navecacao .menu .item:hover {
+  /* transform: scale(1.2); */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.cabecalho .redes-sociais {
+  display: flex;
+  margin-right: 250px;
+}
+
+.cabecalho .redes-sociais .imagem {
+  height: 28px;
+}
+
+.cabecalho .redes-sociais .imagem-relogio {
+ height: 29px;
+}
+
+.titulo {
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  font-family: "Linden Hill", serif;
+  color: #d9d9d9;
+}
+
+.titulo span {
+  display: block;
+  margin-left: 20px;
+  font-size: 30px;
+  font-weight: normal;
+  font-family: "Linden Hill", serif;
+  color: #d9d9d9;
+}
+
+.conteudo-principal .projetos .imagem-painel {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  filter: brightness(60%);
+  opacity: 0;
+  transition: opacity 3s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.conteudo-principal .projetos .imagem-painel.projeto1 {
+  background-image: url("../IMG/painel1.png");
+}
+.conteudo-principal .projetos .imagem-painel.projeto2 {
+  background-image: url("../IMG/painel9.png");
+}
+.conteudo-principal .projetos .imagem-painel.projeto3 {
+  background-image: url("../IMG/painel3.png");
+}
+.conteudo-principal .projetos .imagem-painel.projeto4 {
+  background-image: url("../IMG/painel4.png");
+}
+.conteudo-principal .projetos .imagem-painel.projeto5 {
+  background-image: url("../IMG/painel5.png");
+}
+.conteudo-principal .projetos .imagem-painel.projeto6 {
+  background-image: url("../IMG/painel6.png");
+}
+.conteudo-principal .projetos .imagem-painel.mostrar {
+  opacity: 1;
+}
+
+.conteudo-principal .projetos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  height: 843px;
+}
+
+.conteudo-principal .secao2 {
+  background-color: #f7f0e0;
+  align-items: center;
+  padding: 100px 0;
+}
+
+.conteudo-principal .secao2 .sobre-nos {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.conteudo-principal .secao2 .sobre-nos .titulo2 {
+  font-family: "Linden Hill", serif;
+  font-size: 60px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: #6c0e16;
+  margin-bottom: 45px;
+  margin-top: 30px;
+}
+
+.conteudo-principal .secao2 .sobre-nos .sobre .sobre1 {
+  text-align: center;
+  max-width: 600px;
+  justify-content: center;
+  display: flex;
+  font-size: 30px;
+  font-family: "Linden Hill", serif;
+}
+
+.conteudo-principal .secao2 .sobre-nos .sobre .sobre2 {
+  text-align: center;
+  max-width: 600px;
+  justify-content: center;
+  display: flex;
+  font-size: 30px;
+  margin-top: 29px;
+  font-family: "Linden Hill", serif;
+}
+
+.secao2 .sobre-nos .sobre .garfo-meio {
+  margin-top: 60px;
+  margin-bottom: 25px;
+}
+
+.secao2 .sobre-nos .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.secao2 .sobre-nos .sobre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.secao2 .sobre-nos .espeto {
+  height: 700px;
+  padding: 80px;
+}
+
+
+.card-principal {
+  font-family: Arial, sans-serif;
+  background-color: #6b0e16;
+  min-height: auto;
+  padding: 20px;
+}
+
+.card-principal .cartas {
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.card-principal .secao4 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card-principal .secao4 .titulo3 {
+  font-family: "Linden Hill", serif;
+  /* font-family: "Quicksand", sans-serif; */
+  font-size: 75px;
+  color: #f7f0e0;
+  margin-top: 75px;
+  padding: 0 70px;
+}
+
+.card-principal .secao4 .garfo-meio {
+  margin-top: 60px;
+  margin-bottom: 25px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin: 65px 675px 85px 675px;
+}
+/* ESTILOS DO FLIP CARD (SEM ALTERAÇÕES SIGNIFICATIVAS)
+
+
+/* 1. O Contêiner que define o tamanho e a perspectiva 3D */
+.flip-card {
+  background-color: transparent;
+  width: 350px;
+  height: 200px;
+  perspective: 1000px;
+  /* Removendo margin-bottom que não é mais necessário com o 'gap' e 'flex-wrap' */
+  /* margin-bottom: 75px; */
+}
+
+/* 2. O contêiner interno que faz o giro */
+.flip-card-inner {
+  position: abs;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+/* 3. O giro real do card ao passar o mouse */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* 4. Estilos para os dois lados do card (frente e verso) */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+/* 5. Estilos da Frente */
+.flip-card-front {
+  background-color: #f7f0e0;
+  color: #6b0e16;
+}
+
+/* 6. Estilos do Verso */
+.flip-card-back {
+  background-color: #f7f0e0;
+  color: white;
+  transform: rotateY(180deg);
+  position: relative;
+  padding: 0;
+  overflow: hidden;
+}
+
+.flip-card-back h2 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+}
+
+.flip-card-back .titulo-carta {
+  font-size: 20px;
+  font-family: "Quicksand", sans-serif;
+  color: #6b0e16;
+  /* padding: 20px; */
+  margin-top: 15px;
+}
+
+.flip-card-back .sobre3 {
+  font-size: 14px;
+  /* font-family: ; */
+  color: rgb(54, 52, 52);
+  padding: 32px;
+  font-family: "Quicksand", sans-serif;
+}
+/* 7. ESTILO PARA A IMAGEM NO VERSO */
+
+.flip-card .flip-card-inner .img-verso {
+  border-radius: 10px;
+}
+
+.flip-card-back .img-verso {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  z-index: 1;
+  /* border-radius: 85px; */
+}
+
+/* 8. ESTILO PARA O TEXTO NO VERSO */
+.flip-card-back h2,
+.flip-card-back p {
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  border-radius: 10px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.cabecalho2 {
+  background-color: #6c0e16;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo2 {
+  margin-left: 180px;
+  width: 100px;
+}
+
+.cabecalho2 .navecacao2 .menu2 {
+  display: flex;
+}
+
+.cabecalho2 .navecacao2 .menu2 .item2 {
+  display: flex;
+  padding: 10px;
+  margin: 15px;
+  font-size: 14px;
+  color: #f7f0e0;
+  border: solid #f7f0e0;
+  border-radius: 35px;
+  font-family: "Quicksand", sans-serif;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.cabecalho .navecacao .menu .item:hover {
+  transform: scale(1.2); /* Aumenta 20% */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.cabecalho2 .redes-sociais2 {
+  display: flex;
+  margin-right: 180px;
+  padding: 43px 0 0 0;
+}
+
+.cabecalho2 .redes-sociais2 .imagem2 {
+  height: 32px;
+}
+/* Estilo para o ícone SVG do carrinho no cabeçalho */
+.header-cart-btn svg {
+    height: 28px;
+    width: 28px;
+    fill: #f7f0e0;
+}
+
+/* NOVO ESTILO PARA O ÍCONE DE RELÓGIO (CORRIGIDO) */
+.header-clock-btn svg {
+    height: 28px;
+    width: 28px;
+    fill: #f7f0e0; /* Força o preenchimento para a cor correta */
+    transition: transform 0.3s ease;
+}
+.header-clock-btn:hover svg {
+    transform: scale(1.1);
+}
+
+/* ESTILOS DE MODAL GENÉRICOS ADICIONADOS */
+.hidden { display: none !important; }
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+    transition: opacity 0.3s ease;
+}
+.modal-content {
+    background: #f7f0e0;
+    padding: 30px 40px;
+    border-radius: 15px;
+    max-width: 600px;
+    width: 90%;
+    position: relative;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+.fechar-modal {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #6c0e16;
+}
+.modal-content h2 {
+    font-family: "Linden Hill", serif;
+    font-size: 32px;
+    color: #6c0e16;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+
+
+/* ESTILOS DO MODAL DE HORÁRIOS ADICIONADOS */
+#detalhes-horarios-conteudo {
+    font-family: "Quicksand", sans-serif;
+    color: #333;
+    max-height: 60vh;
+    overflow-y: auto;
+}
+
+#detalhes-horarios-conteudo h3 {
+    font-family: "Linden Hill", serif;
+    font-size: 1.5em;
+    color: #6c0e16;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+#detalhes-horarios-conteudo h3:first-of-type {
+    margin-top: 0;
+}
+#detalhes-horarios-conteudo p {
+    font-size: 1.1em;
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+#detalhes-horarios-conteudo p strong {
+    color: #6c0e16;
+    min-width: 140px; /* Alinha os valores */
+    display: inline-block;
+}
+#detalhes-horarios-conteudo p em {
+    font-style: italic;
+    color: #555;
+    font-size: 0.9em;
+}
+
+#detalhes-horarios-conteudo .icone-loc{
+  height: 19px;
+  margin-left: 15px;
+  margin-top: 2px;
+}
+
+/* =========================================== */
+/* === BOTÃO DE RESERVA NO MODAL HORÁRIOS === */
+/* =========================================== */
+
+#detalhes-horarios-conteudo #btn-ir-para-reserva {
+    width: 100%;
+    background-color: #2a9d8f;
+    border: none;
+    border-radius: 10px;
+    height: 50px;
+    color: #fff;
+    font-size: 18px;
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 25px; /* Espaçamento */
+    text-align: center;
+    padding-top: 12px; /* Ajuste vertical do texto do link */
+    box-sizing: border-box; /* Garante que o padding não estoure a altura */
+    text-decoration: none; /* Remove sublinhado do link */
+    display: block; /* Faz o <a> ocupar a largura total */
+}
+
+#detalhes-horarios-conteudo #btn-ir-para-reserva:hover {
+    background-color: #268a7e;
+    transform: none;
+}

@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nossas Carnes</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Linden+Hill:ital@0;1&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./src/css/carnes.css">
+  <link rel="stylesheet" href="./src/css/reset.css">
+  <link rel="stylesheet" href="./src/css/responsive.css">
+</head>
+
+<title>NOSSAS CARNES</title>
+
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol id="icon-cart" viewBox="0 0 24 24">
+      <path
+        d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12L8.1 13h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.9 2 1.99 2 2-.9 2-2-.9-2-2-2z" />
+    </symbol>
+  </svg>
+
+  <header class="cabecalho">
+    <a href="./index.html">
+      <img class="logo" src="./src/IMG/Group 9.png" alt="">
+    </a>
+    <nav class="navecacao">
+      <ul class="menu">
+        <li><a href="./index.html#sobre-nós" class="item" id="sobre-nos">Sobre nós</a></li>
+        <li><a href="./index.html#especiarias" class="item" id="Especiarias">Especiarias</a></li>
+        <li><a href="#" class="item"> Carnes</a></li>
+        <li><a href="./cadastro.html" class="item">Cadastro</a></li>
+        <li><a href="./feedback.html" class="item">Feedback</a></li>
+      </ul>
+    </nav>
+    <div class="redes-sociais">
+      <a href="./carnes.html?abrirCarrinho=true" class="header-cart-btn">
+        <svg class="imagem">
+          <use xlink:href="#icon-cart"></use>
+        </svg>
+      </a>
+      <a href="#">
+        <img src="./src/IMG/GARFO (1).png" alt="divisor" class="imagem" />
+      </a>
+      <a href="https://open.spotify.com/playlist/1IyykrGQHQ0dIYMl7nitM7?si=8f3OXlMSTPCOeReiNOiH6A&pi=e4uI6Dh0RAKU8">
+        <img src="./src/IMG/spotify-logo.png" alt="facebook" class="imagem" />
+      </a>
+      <a href="#">
+        <img src="./src/IMG/GARFO (1).png" alt="divisor" class="imagem" />
+      </a>
+      <a href="https://www.instagram.com/old_grill2.3?igsh=MXRqMnJ6YmE2ZHVsaA%3D%3D&utm_source=qr">
+        <img src="./src/IMG/instagram (1) 1.png" alt="instagram" class="imagem" />
+      </a>
+      <a href="#">
+        <img src="./src/IMG/GARFO (1).png" alt="divisor" class="imagem" />
+      </a>
+      <a href="https://wa.me/5535991811585">
+        <img src="./src/IMG/whatsapp (3) 1.png" alt="whatsapp" class="imagem" />
+      </a>
+
+      <a href="#"><img src="./src/IMG/GARFO (1).png" alt="divisor" class="imagem"></a>
+      <a href="#" id="btn-horarios" class="header-clock-btn"><img src="./src/IMG/clock.png" alt=""
+          class="imagem-relogio"></a>
+    </div>
+
+  </header>
+  </div>
+  </header>
+
+  <main class="conteudo-principal">
+
+    <div class="card-principal">
+
+      <div class="secao4">
+        <span class="titulo3" id="Especiarias">NOSSSAS CARNES </span>
+        <img src="./src/IMG/garfo-meio vinho (1).png" alt="" class="garfo-meio">
+        <p class="sobre3">
+          Na Old Grill, cada detalhe da sua experiência é importante para nós. Por isso, buscamos sempre oferecer o
+          melhor, selecionando apenas bovinos da mais alta qualidade da região. Nosso compromisso é transformar cada
+          refeição em um momento especial, com sabor, cuidado e dedicação, garantindo que cada visita à nossa
+          churrascaria seja inesquecível.
+        </p>
+      </div>
+
+      <div class="carneS">
+
+        <div class="carne" data-nome="BRISKET COM ACOMPANHAMENTOS" data-preco="165.00">
+          <img src="./src/IMG/faça tiras de brisket com acompanhamentos.jpg" class="img-cardapio" alt="...">
+          <span class="detalhes">BRISKET COM ACOMPANHAMENTOS</span>
+          <span class="explicacao">Tiras de Brisket acompanhada de pure de batata, acompanha molho.</span>
+          <div class="preco-area">
+            <span class="detalhes">R$ 165,00</span>
+            <button class="add-carrinho">
+              <svg>
+                <use xlink:href="#icon-cart"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="carne" data-nome="CONTRA Filé" data-preco="150.00">
+          <img
+            src="./src/IMG/faça tiras de contra file acompanhado de vninagrete tomate pimentão e cebola e farofa como se fosse no brasil.jpg"
+            alt="" class="img-cardapio">
+          <span class="detalhes">CONTRA FILÉ</span>
+          <span class="explicacao"> Tiras de Contra file acompanhado de vinagrete, farofa e fritas.</span>
+          <div class="preco-area">
+            <span class="detalhes">R$ 150,00 </span>
+            <button class="add-carrinho">
+              <svg>
+                <use xlink:href="#icon-cart"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="carne" data-nome="WAGYU COM ACOMPANHAMENTOS" data-preco="189.00">
+          <img src="./src/IMG/faça tiras de wagyu com acompanhamentos.jpg" alt="" class="img-cardapio">
+          <span class="detalhes">WAGYU COM ACOMPANHAMENTOS</span>
+          <span class="explicacao">Wagyu, arroz, molho de alho e salada.</span>
+          <div class="preco-area">
+            <span class="detalhes">R$ 189,00 </span>
+            <button class="add-carrinho">
+              <svg>
+                <use xlink:href="#icon-cart"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="carne" data-nome="FILE MIGNON COM FRITAS" data-preco="160.00">
+          <img src="./src/IMG/faça um prato com tiras de file migno acompanhado com fritas.jpg" alt=""
+            class="img-cardapio">
+          <span class="detalhes">FILE MIGNON COM FRITAS</span>
+          <span class="explicacao">Filé mignon acompanhada de fritas.</span>
+          <div class="preco-area">
+            <span class="detalhes">R$ 160,00 </span>
+            <button class="add-carrinho">
+              <svg>
+                <use xlink:href="#icon-cart"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="carne" data-nome="ALCATRA COM BATATA RUSTICA" data-preco="142.00">
+          <img src="./src/IMG/crie uma imagem da carne alcatra assada que seja apetitosa visivelmente , em um prato branco com acompanhamentos.jpg" alt="" class="img-cardapio">
+          <span class="detalhes">ALCATRA COM BATATA RUSTICA</span>
+          <span class="explicacao">Bife de alcatra acompanhada de batata rustica.</span>
+          <div class="preco-area">
+            <span class="detalhes">R$ 142,00 </span>
+            <button class="add-carrinho">
+              <svg>
+                <use xlink:href="#icon-cart"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="carne" data-nome="BIFE ANCHO E ACOMPANHAMENTOS" data-preco="140.00">
+          <img src="./src/IMG/bife ancho carta.jpg" alt="" class="img-cardapio">
+          <span class="detalhes">BIFE ANCHO E ACOMPANHAMENTOS</span>
+          <span class="explicacao">Bife ancho, arroz e fritas ou mandioca fritas.</span>
+          <div class="preco-area">
+            <span class="detalhes">R$ 140,00 </span>
+            <button class="add-carrinho">
+              <svg>
+                <use xlink:href="#icon-cart"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+         <div class="carne" data-nome="PULLED PORK COM FRITAS" data-preco="126.00">
+          <img src="./src/IMG/PUKLLED PORK CARDAPIO .jpeg" alt="" class="img-cardapio">
+          <span class="detalhes">PULLED PORK COM FRITAS</span>
+          <span class="explicacao">Pulled pork acompanhada de molho sour cream e fritas.</span>
+          <div class="preco-area">
+            <span class="detalhes">R$ 126,00 </span>
+            <button class="add-carrinho">
+              <svg>
+                <use xlink:href="#icon-cart"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        
+        <div class="carne" data-nome="COSTELINHA DE PORCO" data-preco="118.00">
+          <img src="./src/IMG/COSTELINHA DE PORCO.jpeg" alt="" class="img-cardapio">
+          <span class="detalhes">COSTELINHA DE PORCO COM ACOMPANHAMENTOS</span>
+          <span class="explicacao">Costelinha de porco com molho barbecue, salada , arroz, feijao e fritas.</span>
+          <div class="preco-area">
+            <span class="detalhes">R$ 118,00 </span>
+            <button class="add-carrinho">
+              <svg>
+                <use xlink:href="#icon-cart"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+         <div class="carne" data-nome="SALMÃO GRELHADO" data-preco="124.60">
+          <img src="./src/IMG/salmao grelhado com acompanhamentos que combinem com o elemento principal.jpg" alt="" class="img-cardapio">
+          <span class="detalhes">SALMÃO GRELHADO</span>
+          <span class="explicacao">Salmão grelhado acompanhado de .</span>
+          <div class="preco-area">
+            <span class="detalhes">R$ 124,60 </span>
+            <button class="add-carrinho">
+              <svg>
+                <use xlink:href="#icon-cart"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="carne" data-nome="PORÇÃO CAMARÃO" data-preco="135.00">
+          <img src="./src/IMG/camarao.jpg" alt="" class="img-cardapio">
+          <span class="detalhes">PORÇÃO CAMARÃO</span>
+          <span class="explicacao">35 Camarões selecionados e assados.</span>
+          <div class="preco-area">
+            <span class="detalhes">R$ 135,00 </span>
+            <button class="add-carrinho">
+              <svg>
+                <use xlink:href="#icon-cart"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="carne" data-nome="ESPETO DE FRANGO" data-preco="65.00">
+          <img src="./src/IMG/espeto frango.jpg" alt="" class="img-cardapio">
+          <span class="detalhes">ESPETO DE FRANGO</span>
+          <span class="explicacao">5 Espetos de frango com molho de acompanhamento.</span>
+          <div class="preco-area">
+            <span class="detalhes">R$ 65,00 </span>
+            <button class="add-carrinho">
+              <svg>
+                <use xlink:href="#icon-cart"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+
+        <div class="carne" data-nome="ESPETO DE MEDALHÃO" data-preco="75.00">
+          <img src="./src/IMG/medalhaogemini (1).jpeg" alt="" class="img-cardapio">
+          <span class="detalhes">ESPETO DE MEDALHÃO</span>
+          <span class="explicacao">5 Espeto de medalhão de queijo ou frango(ambos envoltos
+            por bacon).</span>
+          <div class="preco-area">
+            <span class="detalhes">R$ 75,00</span>
+            <button class="add-carrinho">
+              <svg>
+                <use xlink:href="#icon-cart"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="carne" data-nome="QUEIJO COALHO" data-preco="50.00">
+          <img src="./src/IMG/queijogemini.jpeg" alt="" class="img-cardapio">
+          <span class="detalhes">QUEIJO COALHO</span>
+          <span class="explicacao">5 Espetos de queijo coalho fresco e produzidos na região.<br></span>
+          <span class="explicacao"> </span>
+          <div class="preco-area">
+            <span class="detalhes">R$ 65,00 </span>
+            <button class="add-carrinho">
+              <svg>
+                <use xlink:href="#icon-cart"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="carne" data-nome="PORÇAO DE ARROZ" data-preco="16,50">
+          <img src="./src/IMG/PORÇÃO DE ARROZ QUE SIRVA 2 PESSOAS.jpg" alt="" class="img-cardapio">
+          <span class="detalhes">PORÇÃO DE ARROZ</span>
+          <span class="explicacao">Porção de 400g de arroz(serve até duas pessoas).<br></span>
+          <span class="explicacao"> </span>
+          <div class="preco-area">
+            <span class="detalhes">R$ 16,50 </span>
+            <button class="add-carrinho">
+              <svg>
+                <use xlink:href="#icon-cart"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+
+        <div class="carne" data-nome="PORÇAO DE FRITAS" data-preco="22,00">
+          <img src="./src/IMG/porção de fritas.jpg" alt="" class="img-cardapio">
+          <span class="detalhes">PORÇÃO DE FRITAS</span>
+          <span class="explicacao">400G de fritas.(simples ou com adicionais)<br></span>
+          <span class="explicacao"> </span>
+          <div class="preco-area">
+            <span class="detalhes">R$ 22,00 </span>
+            <button class="add-carrinho">
+              <svg>
+                <use xlink:href="#icon-cart"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+         <div class="carne" data-nome="VINAGRETE" data-preco="9,50">
+          <img src="./src/IMG/vinagrete.jpeg" alt="" class="img-cardapio">
+          <span class="detalhes">VINAGRETE</span>
+          <span class="explicacao">250g de vinagrete caseiro.<br></span>
+          <span class="explicacao"> </span>
+          <div class="preco-area">
+            <span class="detalhes">R$ 9,50 </span>
+            <button class="add-carrinho">
+              <svg>
+                <use xlink:href="#icon-cart"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+         <div class="carne" data-nome="MOLHO DE ALHO" data-preco="7,50">
+          <img src="./src/IMG/molho de alho.jpg" alt="" class="img-cardapio">
+          <span class="detalhes">MOLHO DE ALHO</span>
+          <span class="explicacao">100g de molho de alho caseiro.<br></span>
+          <span class="explicacao"> </span>
+          <div class="preco-area">
+            <span class="detalhes">R$ 7,50 </span>
+            <button class="add-carrinho">
+              <svg>
+                <use xlink:href="#icon-cart"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="carne" data-nome="MOLHO DE BACON" data-preco="10,00">
+          <img src="./src/IMG/molho bacon.jpeg" alt="" class="img-cardapio">
+          <span class="detalhes">MOLHO DE BACON</span>
+          <span class="explicacao">100g de molho de bacon caseiro com crispys.<br></span>
+          <span class="explicacao"> </span>
+          <div class="preco-area">
+            <span class="detalhes">R$ 10,00 </span>
+            <button class="add-carrinho">
+              <svg>
+                <use xlink:href="#icon-cart"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="carne" data-nome="MOLHO DE ERVAS FINAS" data-preco="10.00">
+          <img src="./src/IMG/MOLHO DE ERVAS FINAS (OU VERDE).jpg" alt="" class="img-cardapio">
+          <span class="detalhes">MOLHO DE ERVAS FINAS</span>
+          <span class="explicacao"> 100g de molho de base caseiro e ervas frescas (salsinha, cebolinha,
+            manjericão).<br></span>
+          <span class="explicacao"> </span>
+          <div class="preco-area">
+            <span class="detalhes">R$ 10,00 </span>
+            <button class="add-carrinho">
+              <svg>
+                <use xlink:href="#icon-cart"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="carne" data-nome="PÃO DE ALHO" data-preco="8.00">
+          <img src="./src/IMG/pao de alho.jpeg" alt="" class="img-cardapio">
+          <span class="detalhes">PÃO DE ALHO</span>
+          <span class="explicacao">Pão de alho fresco e caseiro com molho de alho.<br></span>
+          <span class="explicacao"> </span>
+          <div class="preco-area">
+            <span class="detalhes">R$ 8,00 </span>
+            <button class="add-carrinho">
+              <svg>
+                <use xlink:href="#icon-cart"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div id="modal-opcoes" class="modal-overlay hidden">
+      <div class="modal-content">
+        <button id="fechar-modal-opcoes" class="fechar-modal">×</button>
+        <h2 id="modal-opcoes-titulo">Escolha uma opção</h2>
+        <form id="form-modal-opcoes">
+            <div id="modal-opcoes-lista" class="opcoes-pagamento">
+                </div>
+            <button class="botao" type="submit" id="btn-confirmar-opcao">Confirmar</button>
+        </form>
+      </div>
+    </div>
+    </main>
+
+      <div class="conteiner-bebidas">
+        <div class="cabecalho3">
+          <span class="titulo4">BEBIDAS</span>
+          <img src="./src/IMG/garfo-meio vinho (1).png" alt="" class="garfo-meio">
+        </div>
+        <div class="bebidaS">
+
+          <div class="bebida" data-nome="ÁGUA" data-preco="2.50">
+            <img src="./src/IMG/agua.jpg" alt="" class="img-cardapio">
+            <span class="detalhes">ÁGUA</span>
+            <span class="explicacao">Água com e sem gás.</span>
+            <div class="preco-area">
+              <span class="detalhes">R$2,50</span>
+              <button class="add-carrinho">
+                <svg>
+                  <use xlink:href="#icon-cart"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="bebida" data-nome="SUCOS NATURAIS" data-preco="13.00">
+            <img src="./src/IMG/DRINKS DE FRUTAS.jpg" alt="" class="img-cardapio">
+            <span class="detalhes">SUCOS NATURAIS</span>
+            <span class="explicacao">Sucos naturais de abacaxi, abacaxi com hortelã, acerola, frutas vermelhas, laranja, limonada suíça,
+              maracujá, melancia, morango.(copo ou jarra)</span>
+            <div class="preco-area">
+              <span class="detalhes">R$13,00</span>
+              <button class="add-carrinho">
+                <svg>
+                  <use xlink:href="#icon-cart"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="bebida" data-nome="REFRIGERANTE" data-preco="3.00">
+            <img src="./src/IMG/REFRIGERANTE LATA ( coca cola, sprite, fanta uva e laranja e guarana).jpg" alt=""
+              class="img-cardapio">
+            <span class="detalhes">REFRIGERANTE</span>
+            <span class="explicacao">Coca-cola, fanta laranja, fanta uva, guaraná, pepsi, sprite.</span>
+            <div class="preco-area">
+              <span class="detalhes">R$3,00 a R$16,00</span>
+              <button class="add-carrinho">
+                <svg>
+                  <use xlink:href="#icon-cart"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="bebida" data-nome="CAIPIRINHA" data-preco="22.00">
+            <img src="./src/IMG/caipirinha.jpeg" alt="" class="img-cardapio">
+            <span class="detalhes">CAIPIRINHA</span>
+            <span class="explicacao">Base alcólica de sua escolha, açúcar e a fruta de sua escolha(abacaxi, limão, maracuja, morango,
+              kiwi).</span>
+            <div class="preco-area">
+              <span class="detalhes">R$22,00</span>
+              <button class="add-carrinho">
+                <svg>
+                  <use xlink:href="#icon-cart"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="bebida" data-nome="PINEAPPLE & BASIL SMASH" data-preco="18,50">
+            <img src="./src/IMG/Pineapple & Basil Smas_com coisa azul.jpg" alt="" class="img-cardapio">
+            <span class="detalhes">PINEAPPLE & BASIL SMASH</span>
+            <span class="explicacao">Rum, abacaxi amassado, folhas de manjericão, xarope de açúcar, gelo</span>
+            <div class="preco-area">
+              <span class="detalhes">R$24,50</span>
+              <button class="add-carrinho">
+                <svg>
+                  <use xlink:href="#icon-cart"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="bebida" data-nome="BERRY & BASIL COOLER" data-preco="18,50">
+            <img src="./src/IMG/Berry & Basil Cooler.jpg" alt="" class="img-cardapio">
+            <span class="detalhes">BERRY & BASIL COOLER</span>
+            <span class="explicacao">50 ml de vodka ou gin, 15 ml de xarope de framboesa, 4-5 folhas de manjericão, Água
+              com gás eFramboesas frescas.</span>
+            <div class="preco-area">
+              <span class="detalhes">R$26,50</span>
+              <button class="add-carrinho">
+                <svg>
+                  <use xlink:href="#icon-cart"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="bebida" data-nome="BLUEBERRY & THYME FIZZ" data-preco="18,50">
+            <img src="./src/IMG/Blueberry & Blueberry & Thyme Fizz__.jpg" alt="" class="img-cardapio">
+            <span class="detalhes">BLUEBERRY & THYME FIZZ</span>
+            <span class="explicacao">Gin, purê de blueberry, xarope de tomilho, água com gás, gelo.</span>
+            <div class="preco-area">
+              <span class="detalhes">R$27,00</span>
+              <button class="add-carrinho">
+                <svg>
+                  <use xlink:href="#icon-cart"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="bebida" data-nome="COCONUT & LEMONGRASS COOLER" data-preco="18,50">
+            <img src="./src/IMG/Coconut & Lemongrass Cooler.jpg" alt="" class="img-cardapio">
+            <span class="detalhes">COCONUT & LEMONGRASS COOLER</span>
+            <span class="explicacao">Rum, água de coco, capim-limão fresco, gelo, fatias de limão, suco de limão, água
+              com gás e gelo.</span>
+            <div class="preco-area">
+              <span class="detalhes">R$24,50</span>
+              <button class="add-carrinho">
+                <svg>
+                  <use xlink:href="#icon-cart"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="bebida" data-nome="CHOPP" data-preco="15.00">
+            <img src="./src/IMG/BEBIDA CHOPP.jpg" alt="" class="img-cardapio">
+            <span class="detalhes">CHOPP</span>
+            <span class="explicacao">Copo de 500ml ou torre  de choop de cerveja, vinho ou ice.</span>
+            <div class="preco-area">
+              <span class="detalhes">R$15,00 a R$120,00</span>
+              <button class="add-carrinho">
+                <svg>
+                  <use xlink:href="#icon-cart"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="bebida" data-nome="CERVEJA CORONA" data-preco="8.00">
+            <img src="./src/IMG/CEREVJA CORONA COM FUNDO DE RESTAURANTE.jpg" alt="" class="img-cardapio">
+            <span class="detalhes">CERVEJA CORONA</span>
+            <span class="explicacao">Corona long neck de 330ml.</span>
+            <div class="preco-area">
+              <span class="detalhes">R$8,00</span>
+              <button class="add-carrinho">
+                <svg>
+                  <use xlink:href="#icon-cart"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="bebida" data-nome="HEINEKEN" data-preco="27.00">
+            <img src="./src/IMG/garrafas-heineken-1920x1080-715x402.jpg" alt="" class="img-cardapio">
+            <span class="detalhes">HEINEKEN</span>
+            <span class="explicacao">Heineken long neck de 330ml.</span>
+            <div class="preco-area">
+              <span class="detalhes">R$27,00</span>
+              <button class="add-carrinho">
+                <svg>
+                  <use xlink:href="#icon-cart"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="bebida" data-nome="VINHO" data-preco="45.00">
+            <img src="./src/IMG/vinho.jpeg" alt="" class="img-cardapio">
+            <span class="detalhes">VINHO</span>
+            <span class="explicacao">Garrafa de vinho (900ml), Casillero del Diabo, Don Tannat 2020, Quinta do Vale Meão, Vinícola Casa Perini, tinto suave ou
+              seco.</span>
+            <div class="preco-area">
+              <span class="detalhes">R$45,00</span>
+              <button class="add-carrinho">
+                <svg>
+                  <use xlink:href="#icon-cart"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="bebida" data-nome="WHISKY" data-preco="27.00">
+            <img src="./src/IMG/whisk.jpeg" alt="" class="img-cardapio">
+            <span class="detalhes">WHISKY</span>
+            <span class="explicacao">Dose de Black Label, Jack Daniels, White Horse (30ml).</span>
+            <div class="preco-area">
+              <span class="detalhes">R$27,00</span>
+              <button class="add-carrinho">
+                <svg>
+                  <use xlink:href="#icon-cart"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+
+          <div class="bebida" data-nome="LICOR 43" data-preco="27.00">
+            <img src="./src/IMG/LICOR TESTE2.jpg" alt="" class="img-cardapio">
+            <span class="detalhes">LICOR 43</span>
+            <span class="explicacao">Dose de licor 43 (30ml).</span>
+            <div class="preco-area">
+              <span class="detalhes">R$27,00</span>
+              <button class="add-carrinho">
+                <svg>
+                  <use xlink:href="#icon-cart"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="bebida" data-nome="CAMPARI" data-preco="27.00">
+            <img src="./src/IMG/CAMPARI.jpg" alt="" class="img-cardapio">
+            <span class="detalhes">CAMPARI</span>
+            <span class="explicacao">Dose de campari (30ml).</span>
+            <div class="preco-area">
+              <span class="detalhes">R$27,00</span>
+              <button class="add-carrinho">
+                <svg>
+                  <use xlink:href="#icon-cart"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="bebida" data-nome="GIN BOMBAY" data-preco="27.00">
+            <img src="./src/IMG/GIN BOMBAY.jpg" alt="" class="img-cardapio">
+            <span class="detalhes">GIN BOMBAY</span>
+            <span class="explicacao">Dose de gin de (30ml).</span>
+            <div class="preco-area">
+              <span class="detalhes">R$27,00</span>
+              <button class="add-carrinho">
+                <svg>
+                  <use xlink:href="#icon-cart"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="conteiner-sobremesas">
+      <div class="cabecalho3">
+        <span class="titulo4">SOBREMESAS</span>
+        <img src="./src/IMG/garfo-meio vinho (1).png" alt="" class="garfo-meio">
+      </div>
+      <div class="sobremesaS">
+
+        <div class="sobremesa" data-nome="CREPE" data-preco="25.00">
+          <img src="./src/IMG/crepe.jpeg" alt="Crepe" class="img-cardapio"> 
+          <span class="detalhes">CREPE</span>
+          <span class="explicacao">Delicioso crepe francês com recheio à sua escolha.</span>
+          <div class="preco-area">
+            <span class="detalhes">R$ 25,00</span>
+            <button class="add-carrinho">
+              <svg>
+                <use xlink:href="#icon-cart"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="sobremesa" data-nome="PETIT GATEAU" data-preco="22.00">
+          <img src="./src/IMG/petti gateu.jpeg" alt="Petit Gateau" class="img-cardapio">
+          <span class="detalhes">PETIT GATEAU</span>
+          <span class="explicacao">Bolo quente com recheio cremoso, acompanhado de sorvete.</span>
+          <div class="preco-area">
+            <span class="detalhes">R$ 30,00</span>
+            <button class="add-carrinho">
+              <svg>
+                <use xlink:href="#icon-cart"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="sobremesa" data-nome="TORTA" data-preco="18.00">
+          <img src="./src/IMG/transferir (25).jpeg" alt="Torta" class="img-cardapio">
+          <span class="detalhes">FATIA DE TORTA</span>
+          <span class="explicacao">Uma fatia generosa de torta caseira.</span>
+          <div class="preco-area">
+            <span class="detalhes">R$ 18,00</span>
+            <button class="add-carrinho">
+              <svg>
+                <use xlink:href="#icon-cart"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="sobremesa" data-nome="BROWNIE" data-preco="20.00">
+          <img src="./src/IMG/brownie.jpeg" alt="Brownie" class="img-cardapio">
+          <span class="detalhes">BROWNIE</span>
+          <span class="explicacao">Brownie de chocolate meio amargo com nozes.</span>
+          <div class="preco-area">
+            <span class="detalhes">R$ 18,00</span>
+            <button class="add-carrinho">
+              <svg>
+                <use xlink:href="#icon-cart"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    
+    <aside id="carrinho-lateral" class="">
+      <div class="carrinho-header">
+        <h3>Meu Carrinho</h3>
+        <button id="fechar-carrinho">X</button>
+      </div>
+      <div id="carrinho-corpo">
+        <ul id="lista-carrinho">
+        </ul>
+      </div>
+     <div class="carrinho-footer">
+        <div class="footer-totais">
+          <p>Itens: <span id="total-itens-carrinho">0</span></p>
+          <p>Total: <span id="total-carrinho">R$ 0,00</span></p>
+        </div>
+        <button id="concluir-compra">Concluir Compra</button>
+      </div>
+    </aside>
+    <div id="overlay"></div>
+
+
+    <header class="cabecalho2">
+      <img class="logo2" src="./src/IMG/Group 9.png" alt="">
+
+      <nav class="navecacao2">
+
+        <div class="redes-sociais2">
+          <a href="https://open.spotify.com/playlist/1IyykrGQHQ0dIYMl7nitM7?si=8f3OXlMSTPCOeReiNOiH6A&pi=e4uI6Dh0RAKU8">
+            <img src="./src/IMG/spotify-logo.png" alt="facebook" class="imagem2" />
+          </a>
+
+          <a href="#">
+            <img src="./src/IMG/GARFO (1).png" alt="facebook" class="imagem2" />
+          </a>
+
+
+           <a href="https://www.instagram.com/old_grill2.3?igsh=MXRqMnJ6YmE2ZHVsaA%3D%3D&utm_source=qr">
+        <img src="./src/IMG/instagram (1) 1.png" alt="instagram" class="imagem2" />
+      </a>
+          <a href="#">
+            <img src="./src/IMG/GARFO (1).png" alt="facebook" class="imagem2" />
+          </a>
+
+
+
+          <a href="https://wa.me/5535991811585">
+            <img src="./src/IMG/whatsapp (3) 1.png" alt="whatzaap" class="imagem2" />
+          </a>
+
+        </div>
+
+      </nav>
+    </header>
+
+    <div id="modal-horarios" class="modal-overlay hidden">
+      <div class="modal-content">
+        <button id="fechar-modal-horarios" class="fechar-modal">×</button>
+        <h2>Horários & Localização</h2>
+        <div id="detalhes-horarios-conteudo">
+          <h3>Horários de Atendimento</h3>
+          <p><strong>Terça a Sexta:</strong> 18:00 - 22:30</p>
+          <p><strong>Sábado:</strong> 16:00 - 23:00</p>
+          <p><strong>Domingos e Feriados:</strong> 10:00 - 16:00</p>
+
+          <h3>Nossa Localização</h3>
+          <p>Rua da Costela, 123 - Bairro Brasa</p>
+          <p>Centro, Balneário Camboriú
+            <a
+              href="https://www.google.com.br/maps/place/Balne%C3%A1rio+Cambori%C3%BA,+SC/@-27.0057719,-48.6581834,13z/data=!3m1!4b1!4m15!1m8!3m7!1s0x94d8b616bc8c3663:0x888ea007f0e0e4f7!2sCentro,+Balne%C3%A1rio+Cambori%C3%BA+-+SC!3b1!8m2!3d-27.0011858!4d-48.6298047!16s%2Fg%2F1ymwj9fyf!3m5!1s0x94d8b65cc2e52aad:0x2dc004f5e6adebc4!8m2!3d-26.9979839!4d-48.63258!16s%2Fg%2F1ymvng0m1?hl=pt-BR&entry=ttu&g_ep=EgoyMDI1MTEwMi4wIKXMDSoASAFQAw%3D%3D"><img
+                class="icone-loc" src="./src/IMG/location (1).png" alt=""></a>
+          </p>
+          <p><em>(Estacionamento disponível no local)</em></p>
+          <a href="reserva.html" class="botao" id="btn-ir-para-reserva">Fazer Reserva</a>
+        </div>
+      </div>
+    </div>
+    <script src="./src/js/modal-horarios.js"></script>
+
+    <script src="./src/js/carnes.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #000;
+    /* A linha 'scroll-behavior: smooth;' FOI REMOVIDA DAQUI */
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+html {
+  height: 100%;
+  scroll-behavior: smooth; /* <-- E ADICIONADA AQUI, NO LUGAR CORRETO */
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Garante que o body ocupe no mínimo 100% da altura da tela */
+}
+
+/* O seletor '.conteudo-principal' já deve existir, 
+   mas esta regra garante que ele se expanda.
+   Você pode adicionar apenas a propriedade 'flex: 1;'
+   aonde ele já está definido ou criar esta nova regra. */
+main.conteudo-principal {
+  flex: 1; /* Faz com que a área de conteúdo principal cresça e ocupe o espaço disponível */
+}

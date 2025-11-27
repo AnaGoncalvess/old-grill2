@@ -1,0 +1,94 @@
+/* src/css/reserva.css */
+
+/* Esconde a seção de observações do pedido se o carrinho estiver vazio */
+.secao-obs-pedido-hidden {
+    display: none;
+}
+
+/* Texto informativo na coluna da direita */
+.resumo-pedido .info-reserva {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.4;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+}
+
+.resumo-pedido .info-reserva a {
+    color: #6c0e16;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Botão "Fazer Reserva" dentro do modal de horários */
+#detalhes-horarios-conteudo #btn-ir-para-reserva {
+    width: 100%; /* <-- CORRIGIDO DE 20px PARA 100% */
+    background-color: #2a9d8f;
+    border: none;
+    border-radius: 10px;
+    height: 50px;
+    color: #fff;
+    font-size: 18px;
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 25px; /* Espaçamento */
+    text-align: center;
+    padding-top: 12px; /* Ajuste vertical do texto do link */
+    box-sizing: border-box; /* Garante que o padding não estoure a altura */
+    text-decoration: none; /* Remove sublinhado do link */
+    display: block; /* Faz o <a> ocupar a largura total */
+}
+
+#detalhes-horarios-conteudo #btn-ir-para-reserva:hover {
+    background-color: #268a7e;
+    transform: none; /* Garante que não haja zoom */
+}
+
+/* Adicione ao final de src/css/reserva.css */
+
+/* --- MUDANÇA 4: Estilos para o dia da semana e erros --- */
+.info-dia-semana {
+    font-weight: bold;
+    color: #6c0e16; /* Vermelho padrão */
+    margin-left: 8px;
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+.info-dia-semana.erro {
+    color: #c92a2a; /* Vermelho de erro (mais forte) */
+}
+
+/* --- MUDANÇA 1: Estilo para campo readonly --- */
+input[readonly] {
+    background-color: #e9ecef; /* Cinza claro */
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+/* Estilo para item 'nenhum item' no resumo */
+.resumo-pedido .nenhum-item {
+    justify-content: center;
+    font-style: italic;
+    color: #888;
+    padding: 10px 0;
+}
+/* Adicione ao final de src/css/reserva.css */
+
+/* --- CORREÇÃO DO ÍCONE DO CARRINHO CORTADO --- */
+.cabecalho .header-cart-btn {
+    display: flex; /* Garante que o link se comporte como um flex container */
+    align-items: center; /* Alinha o SVG verticalmente */
+    justify-content: center; /* Alinha o SVG horizontalmente */
+}
+
+/* Esta regra corrige o ícone do carrinho no reserva.html */
+.cabecalho .header-cart-btn svg {
+    height: 28px;
+    width: 28px;
+    fill: #f7f0e0;
+}

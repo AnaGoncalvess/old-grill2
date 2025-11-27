@@ -1,0 +1,245 @@
+body {
+    background-color: #f7f0e0;
+    font-family: "Quicksand", sans-serif;
+}
+
+/* --- CABEÇALHO ORIGINAL --- */
+.cabecalho { background-color: #6c0e16; display: flex; justify-content: space-between; align-items: center; }
+.logo { margin-left: 250px; width: 100px; }
+.cabecalho .navecacao .menu { display: flex; }
+.cabecalho .navecacao .menu .item { display: flex; padding: 10px; margin: 15px; font-size: 14px; color: #f7f0e0; border: solid #f7f0e0; border-radius: 35px; font-family: "Quicksand", sans-serif; transition: transform 0.4s ease, box-shadow 0.4s ease; }
+.cabecalho .redes-sociais { display: flex; align-items: center; margin-right: 250px; }
+.cabecalho .redes-sociais .imagem { height: 28px; }
+.cabecalho .redes-sociais .imagem-relogio {
+ height: 29px;
+}
+.header-cart-btn svg { height: 28px; width: 28px; fill: #f7f0e0; }
+
+/* --- LAYOUT PRINCIPAL --- */
+.checkout-container { display: flex; max-width: 1200px; margin: 50px auto; gap: 40px; padding: 20px; }
+.checkout-form { flex: 2; }
+
+/* --- COLUNA DA DIREITA (NOVA) --- */
+.coluna-direita {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* Espaço entre a caixa de resumo e a de observações */
+}
+
+.resumo-pedido { background-color: #fff; border-radius: 15px; padding: 30px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); }
+
+/* --- FORMULÁRIO --- */
+.checkout-form section { background-color: #fff; padding: 30px; border-radius: 15px; margin-bottom: 30px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); }
+.checkout-form h2, .secao-observacoes h2 { font-family: "Linden Hill", serif; font-size: 2em; color: #6c0e16; margin-bottom: 25px; border-bottom: 2px solid #f0e6d2; padding-bottom: 10px; }
+.caixa { margin-bottom: 20px; }
+.caixa-grupo { display: flex; gap: 20px; }
+.caixa-grupo .caixa { flex: 1; }
+.nomel { font-size: 18px; font-family: "Linden Hill", serif; color: #6c0e16; margin-bottom: 8px; display: block; }
+.textol { width: 100%; border: 1px solid #ddd; border-radius: 8px; padding: 10px 15px; font-family: "Quicksand", sans-serif; font-size: 16px; resize: vertical; }
+input.textol, select.textol { height: 45px; } /* Aplicado ao select também */
+.botao { width: 100%; background-color: #2a9d8f; border: none; border-radius: 10px; height: 55px; color: #fff; font-size: 20px; font-family: "Quicksand", sans-serif; font-weight: bold; cursor: pointer; transition: all 0.3s ease; }
+.botao:hover { background-color: #268a7e; transform: scale(1.02); }
+
+/* --- OPÇÕES DE PAGAMENTO --- */
+.opcao-radio { 
+    display: flex; 
+    align-items: flex-start; /* Alinha no topo para o texto de múltiplas linhas */
+    border: 1px solid #ddd; 
+    padding: 15px; 
+    border-radius: 8px; 
+    margin-bottom: 10px; /* Adicionado espaço entre as opções */
+}
+.opcao-radio input[type="radio"] { 
+    margin-right: 15px; 
+    margin-top: 3px; /* Alinha o radio button com a primeira linha do texto */
+}
+.opcao-radio label { 
+    font-size: 16px; 
+    width: 100%;
+    cursor: pointer; /* Adiciona o cursor de ponteiro */
+}
+
+/* --- NOVOS ESTILOS PARA OPÇÕES COM DETALHES (ENTREGA/RETIRADA) --- */
+.opcao-radio label .opcao-titulo {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 4px;
+    color: #333; /* Cor mais escura para o título */
+}
+
+.opcao-radio label .opcao-detalhe {
+    display: block;
+    font-size: 0.9em;
+    color: #555;
+}
+/* --- RESUMO DO PEDIDO --- */
+.resumo-pedido h2 { text-align: center; }
+#lista-resumo-carrinho { list-style: none; padding: 0; margin-bottom: 20px; }
+#lista-resumo-carrinho li { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #eee; font-size: 15px; }
+#lista-resumo-carrinho .item-nome { flex-grow: 1; margin-right: 10px; }
+.total-resumo { display: flex; justify-content: space-between; font-size: 22px; font-weight: bold; color: #6c0e16; margin-top: 20px; padding-top: 20px; border-top: 2px solid #6c0e16; }
+
+/* === NOVOS ESTILOS PARA ITEM CLICÁVEL E PONTO PENDENTE === */
+#lista-resumo-carrinho .item-ponto-clicavel-resumo {
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    border-radius: 4px;
+    padding: 10px 5px; /* Adiciona um padding leve */
+}
+#lista-resumo-carrinho .item-ponto-clicavel-resumo:hover {
+    background-color: #f7f0e0; /* Cor de fundo do body */
+}
+.ponto-pendente-texto {
+    color: #c92a2a; /* Vermelho forte */
+    font-weight: bold;
+    font-style: italic;
+}
+.ponto-escolhido-texto {
+    color: #6c0e16; /* Vermelho forte */
+    font-weight: bold;
+}
+/* === FIM DOS NOVOS ESTILOS === */
+
+
+/* --- SEÇÃO DE OBSERVAÇÕES (NOVA) --- */
+.secao-observacoes {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+.secao-observacoes .caixa {
+    margin-bottom: 0;
+}
+
+/* Adicione isto ao seu arquivo checkout.css */
+
+#secao-endereco.secao-endereco-desabilitada {
+    opacity: 0.5;
+    pointer-events: none; /* Impede cliques nos campos desabilitados */
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* --- ESTILOS DO MODAL (COPIADO DE CADASTRO.CSS) --- */
+.hidden { display: none !important; }
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+    transition: opacity 0.3s ease;
+}
+.modal-content {
+    background: #f7f0e0;
+    padding: 30px 40px;
+    border-radius: 15px;
+    max-width: 600px;
+    width: 90%;
+    position: relative;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+.fechar-modal {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #6c0e16;
+}
+.modal-content h2 {
+    font-family: "Linden Hill", serif;
+    font-size: 32px;
+    color: #6c0e16;
+    margin-bottom: 25px;
+    text-align: center;
+}
+/* Alinha o botão do modal de cartão */
+#form-cartao-credito .botao {
+    background-color: #6c0e16; /* Cor do tema de cadastro */
+    margin-top: 10px;
+    height: 50px;
+}
+#form-cartao-credito .botao:hover {
+    background-color: #8a1a26;
+}
+
+
+/* --- RESPONSIVIDADE --- */
+@media (max-width: 900px) {
+    .checkout-container { flex-direction: column; }
+    .coluna-direita { order: -1; } /* Coloca o resumo e observações no topo em telas mobile */
+}
+
+/* ============================================================ */
+/* ===== NOVOS ESTILOS (ADICIONAR AO CHECKOUT.CSS) ===== */
+/* ============================================================ */
+/* * Estilos para Checkbox no modal de Ponto/Fritas
+ * (Copiados de carnes.css e adaptados para o modal existente) 
+*/
+#modal-opcoes-lista-ponto .opcao-checkbox {
+    display: flex;
+    align-items: flex-start;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    background: #fff;
+    /* Herda estilos de .opcoes-pagamento se já existirem */
+}
+
+#modal-opcoes-lista-ponto .opcao-checkbox input[type="checkbox"] {
+    margin-right: 15px;
+    margin-top: 3px;
+    /* Ajuste de tamanho se necessário */
+    width: 18px;
+    height: 18px;
+}
+
+#modal-opcoes-lista-ponto .opcao-checkbox label {
+    font-size: 16px;
+    width: 100%;
+    cursor: pointer;
+    color: #6c0e16; /* Cor do tema */
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
+}
+
+/* Garante que o .opcao-radio (do ponto) também se pareça com o de carnes.css */
+#modal-opcoes-lista-ponto .opcao-radio {
+    display: flex;
+    align-items: flex-start;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    background: #fff;
+}
+#modal-opcoes-lista-ponto .opcao-radio label {
+    font-size: 16px;
+    width: 100%;
+    cursor: pointer;
+    color: #6c0e16;
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
+}
+#modal-opcoes-lista-ponto .opcao-radio input[type="radio"] {
+    margin-right: 15px;
+    margin-top: 3px;
+}
+
+
+/* --- RESPONSIVIDADE --- */
+@media (max-width: 900px) {
+    .checkout-container { flex-direction: column; }
+    .coluna-direita { order: -1; } /* Coloca o resumo e observações no topo em telas mobile */
+}

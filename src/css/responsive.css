@@ -1,0 +1,661 @@
+/* index */
+/* --- Tablet (Landscape) --- 1024px e abaixo --- */
+@media (min-width:625px) and (max-width: 1024px) {
+  /* --- Cabeçalho --- */
+  .cabecalho {
+    flex-direction: column;
+    padding: 20px 0;
+  }
+  .logo {
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+  .cabecalho .redes-sociais {
+    justify-content: center;
+    margin-top: 35px;
+    margin-right: 0;
+  }
+   /* .cabecalho .redes-sociais .imagem-relogio{
+    height: 23px;
+  } */
+  .cabecalho .navecacao .menu {
+    justify-content: center;
+    flex-wrap: wrap; /* Permite que o menu quebre a linha se necessário */
+  }
+  .cabecalho .navecacao .menu .item {
+    margin: 5px;
+  }
+
+  /* --- Painel Principal --- */
+  .titulo {
+    font-size: 38px;
+    padding: 0 20px; /* Evita que o texto encoste nas bordas */
+  }
+  .titulo span {
+    font-size: 24px;
+    margin-left: 0;
+  }
+
+  /* --- Sobre Nós --- */
+  /* .secao2 {
+    margin-left: -15px;
+    margin-right: -15px;
+  } */
+  .secao2 .sobre-nos .container {
+    flex-direction: column;
+    margin: 0;
+    align-items: center;
+  }
+  .secao2 .sobre-nos .espeto.espeto-left {
+    display: none; /* Oculta um dos espetos */
+  }
+  .secao2 .sobre-nos .espeto {
+    height: 400px;
+    padding: 20px;
+  }
+  .conteudo-principal .secao2 .sobre-nos .sobre .sobre1,
+  .conteudo-principal .secao2 .sobre-nos .sobre .sobre2 {
+    max-width: 90%;
+    font-size: 26px;
+    padding: 0 15px;
+  }
+  .conteudo-principal .secao2 .sobre-nos .titulo2 {
+    font-size: 45px;
+    margin-bottom: 20px;
+  }
+
+  /* --- Especiarias (Flip Cards) --- */
+  .card-principal .secao4 .titulo3 {
+    font-size: 50px;
+    text-align: center;
+    padding: 0 20px;
+  }
+  .card-principal .secao4 .garfo-meio {
+    margin: 40px auto;
+    width: 150px; /* Reduz o tamanho do garfo */
+  }
+
+  /* --- Rodapé --- */
+  .cabecalho2 {
+    flex-direction: column;
+    padding: 25px 0;
+    margin-top: 0;
+  }
+  .logo2 {
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+  .cabecalho2 .redes-sociais2 {
+    margin-right: 0;
+    padding: 0;
+    margin-top: 10px;
+  }
+ 
+}
+
+
+/* --- Mobile --- 480px e abaixo --- */
+@media (max-width: 624px) {
+  /* --- Cabeçalho --- */
+  .cabecalho .navecacao .menu {
+    flex-direction: column; /* Empilha os itens do menu */
+    align-items: center;
+  }
+  .cabecalho .navecacao .menu .item {
+    margin: 8px 0;
+    width: 200px; /* Define uma largura fixa para os botões */
+    justify-content: center;
+  }
+  .cabecalho .redes-sociais .imagem {
+    height: 24px;
+  }
+   .cabecalho .redes-sociais .imagem-relogio{
+    height: 25px;
+  }
+
+  /* --- Painel Principal --- */
+ .conteudo-principal .projetos {
+  height: 250px; /* Por exemplo, um valor menor que 334px */
+}
+  .titulo {
+    font-size: 32px;
+  }
+  .titulo span {
+    font-size: 20px;
+  }
+
+  /* --- Sobre Nós --- */
+  .conteudo-principal .secao2 {
+    padding: 50px 0;
+  }
+  .secao2 .sobre-nos .espeto {
+    display: none;
+  }
+  .conteudo-principal .secao2 .sobre-nos .sobre .sobre1,
+  .conteudo-principal .secao2 .sobre-nos .sobre .sobre2 {
+    font-size: 22px;
+  }
+  .conteudo-principal .secao2 .sobre-nos .titulo2 {
+    font-size: 36px;
+  }
+
+  /* --- Especiarias (Flip Cards) --- */
+  .card-principal .secao4 .titulo3 {
+    font-size: 40px;
+  }
+  .card-principal .cartas {
+    gap: 25px;
+  }
+  .flip-card {
+    width: 90%; /* Faz o card ocupar quase toda a largura */
+    height: 220px; /* Ajusta a altura */
+  }
+  .flip-card-back .titulo-carta {
+    font-size: 18px;
+  }
+  .flip-card-back .sobre3 {
+    font-size: 14px;
+    padding: 20px;
+  }
+
+  /* --- Rodapé --- */
+  .cabecalho2 .redes-sociais2 .imagem2 {
+    height: 28px;
+  }
+}
+/* index */
+
+
+/* carnes */ 
+/* --- Tablet (Landscape) --- 1024px e abaixo --- */
+@media (max-width: 1024px) {
+  /* --- Cabeçalho --- */
+ 
+  .cabecalho .redes-sociais {
+    margin-right: 0; /* Estava faltando esta regra */
+  }
+
+  /* --- Seção Título --- */
+
+   /* ADICIONE A REGRA DO GARFO AQUI */
+  .card-principal .secao4 .garfo-meio {
+    margin: 40px auto; /* Remove as margens laterais e centraliza */
+    width: 150px;
+  }
+  .logo {
+    margin-left: 0;
+  }
+
+
+  /* --- Seção Título --- */
+  .card-principal .secao4 .sobre3 {
+    padding: 0 150px 80px 150px;
+  }
+
+  /* --- Rodapé --- */
+  .logo2 {
+    margin-left: 50px;
+  }
+  .cabecalho2 .redes-sociais2 {
+    margin-right: 50px;
+  }
+}
+
+/* --- Tablet (Portrait) --- 768px e abaixo --- */
+@media (max-width: 768px) {
+  /* --- Cabeçalho --- */
+  .cabecalho {
+    flex-direction: column;
+    padding: 20px 0;
+  }
+  .logo {
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+  .cabecalho .redes-sociais {
+    margin-right: 0;
+    margin-top: 15px;
+  }
+  .cabecalho .navecacao .menu {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .cabecalho .navecacao .menu .item {
+    margin: 5px;
+  }
+
+  /* --- Seção Título --- */
+  .card-principal .secao4 .titulo3 {
+    font-size: 50px;
+    padding: 0 20px;
+    text-align: center;
+  }
+  .card-principal .secao4 .sobre3 {
+    padding: 0 30px 60px 30px;
+    font-size: 24px;
+  }
+  .card-principal .secao4 .garfo-meio {
+    margin: 40px auto;
+    width: 150px;
+  }
+
+  /* --- Cards de Comida --- */
+  .carne, .bebida, .sobremesa {
+    width: 320px; /* Aumenta um pouco a largura base */
+  }
+  .carne:hover,
+  .bebida:hover, .sobremesa:hover {
+    transform: scale(1.05); /* Reduz o efeito de hover */
+  }
+
+  /* --- Título Bebidas --- */
+ .conteiner-bebidas .cabecalho3 .titulo4, .conteiner-sobremesas .cabecalho3 .titulo4 {
+    font-size: 50px;
+    text-align: center;
+  }
+  .conteiner-bebidas .cabecalho3 {
+    gap: 40px;
+  }
+  .cabecalho3 .garfo-meio {
+    margin: 0 auto; /* Remove margens excessivas */
+  }
+
+  /* --- Carrinho Lateral --- */
+  #carrinho-lateral {
+    width: 320px;
+    right: -320px;
+  }
+
+  /* --- Rodapé --- */
+  .cabecalho2 {
+    flex-direction: column;
+    padding: 25px 0;
+  }
+  .logo2 {
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+  .cabecalho2 .redes-sociais2 {
+    margin-right: 0;
+    padding: 0;
+    margin-top: 10px;
+  }
+}
+
+/* --- Mobile --- 480px e abaixo --- */
+
+@media (max-width: 480px) {
+  /* --- Cabeçalho --- */
+  .cabecalho .navecacao .menu {
+    flex-direction: column; /* Empilha os itens do menu */
+    align-items: center;
+  }
+  .cabecalho .navecacao .menu .item {
+    margin: 8px 0;
+    width: 200px;
+    justify-content: center;
+  }
+
+  /* --- Seção Título --- */
+  .card-principal .secao4 .titulo3 {
+    font-size: 40px;
+  }
+  .card-principal .secao4 .sobre3 {
+    padding: 0 20px 40px 20px;
+    font-size: 20px;
+  }
+  .card-principal .secao4 .garfo-meio {
+    margin: 30px auto;
+  }
+
+
+  /* --- Cards de Comida --- */
+  .carneS, .bebidaS, .sobremesaS {
+    gap: 30px;
+    padding: 10px;
+  }
+  .carne, .bebida, .sobremesa {
+    width: 90%; /* Faz o card ocupar a largura */
+  }
+  .carne:hover,
+  .bebida:hover {
+    transform: none; /* Remove hover em mobile */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  /* --- Título Bebidas --- */
+ .conteiner-bebidas .cabecalho3 .titulo4, .conteiner-sobremesas .cabecalho3 .titulo4 {
+    font-size: 40px;
+  }
+  .conteiner-bebidas, .conteiner-sobremesas {
+    gap: 40px;
+  }
+
+  /* --- Carrinho Lateral --- */
+  #carrinho-lateral {
+    width: 95%; /* Ocupa quase toda a tela */
+    right: -100%;
+  }
+  #carrinho-lateral.aberto {
+    right: 0;
+  }
+}
+
+/*carnes */ 
+
+
+/* cadastro */
+/* cadastro */
+/* =========================================== */
+/* --- Tablet (Landscape) --- 1024px e abaixo --- */
+/* =========================================== */
+@media (min-width:624px) and (max-width: 1024px) {
+  /* --- Cabeçalho --- */
+  .logo {
+    margin-left: 0;
+  }
+  
+  /* CORREÇÃO DEFINITIVA:
+    Em vez de usar 'padding' no pai, usamos 'calc()' para
+    reduzir a largura dos filhos e 'margin: auto' para
+    centralizá-los. Isso cria a margem de 15px nas laterais
+    sem afetar nenhuma outra página.
+  */
+  #area-cadastro,
+  #painel-cliente {
+      /* Define a largura como 100% da tela MENOS 30px (15px de cada lado) */
+      width: calc(100% - 30px);
+      
+      /* Sobrescreve 'margin-left/right: 15px' ou 'margin: 50px 15px' 
+        de tentativas anteriores e força a centralização do bloco.
+        (O '50px' é mantido para o #painel-cliente)
+      */
+      margin-left: auto;
+      margin-right: auto;
+  }
+  
+  .botao{
+    margin-bottom: 20px;
+  }
+
+  /* --- Rodapé --- */
+  .logo2 {
+    margin-left: 0px;
+  }
+  .cabecalho2 .redes-sociais2 {
+    margin-right: 0px;
+  }
+}
+
+/* --- Tablet (Portrait) --- 768px e abaixo --- */
+@media (max-width: 768px) {
+  /* --- Cabeçalho --- */
+  .cabecalho {
+    flex-direction: column;
+    padding: 20px 0;
+  }
+  .logo {
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+  .cabecalho .redes-sociais {
+    margin-right: 0;
+    margin-top: 15px;
+  }
+  .cabecalho .navecacao .menu {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .cabecalho .navecacao .menu .item {
+    margin: 5px;
+  }
+
+  /* --- Título --- */
+  .feed .titulo5 {
+    font-size: 50px;
+    text-align: center;
+    padding: 0 20px;
+  }
+  .feed .garfo-meio {
+    margin: 40px auto;
+    width: 150px;
+  }
+
+  /* --- Formulário --- */
+  .container {
+    padding: 0 20px; /* Adiciona padding lateral */
+  }
+
+  /* --- Painel Cliente --- */
+  #painel-cliente {
+    max-width: 95%;
+    margin: 30px auto;
+  }
+  .painel-header {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+  .painel-header h1 {
+    margin-bottom: 15px;
+    font-size: 2em;
+  }
+  .painel-body {
+    padding: 20px;
+  }
+
+  /* --- Modal --- */
+  .modal-content {
+    padding: 20px;
+    width: 95%;
+  }
+  .modal-content h2 {
+    font-size: 28px;
+  }
+
+  /* --- Rodapé --- */
+  .cabecalho2 {
+    flex-direction: column;
+    padding: 25px 0;
+  }
+  .logo2 {
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+  .cabecalho2 .redes-sociais2 {
+    margin-right: 0;
+    padding: 0;
+    margin-top: 10px;
+  }
+}
+
+/* --- Mobile --- 480px e abaixo --- */
+@media (max-width: 480px) {
+  /* --- Cabeçalho --- */
+  .cabecalho .navecacao .menu {
+    flex-direction: column; /* Empilha os itens do menu */
+    align-items: center;
+  }
+  .cabecalho .navecacao .menu .item {
+    margin: 8px 0;
+    width: 200px;
+    justify-content: center;
+  }
+
+  /* --- Título --- */
+  .feed .titulo5 {
+    font-size: 40px;
+  }
+  .feed .garfo-meio {
+    margin: 30px auto;
+  }
+
+  /* --- Painel Cliente --- */
+  .painel-nav {
+    flex-direction: column; /* Empilha as abas */
+  }
+  .tab-button {
+    border-bottom: 1px solid #eee;
+  }
+  .tab-button.active {
+    border-bottom: 3px solid #6c0e16; /* Mantém o indicador ativo */
+  }
+  .tab-content h2 {
+    font-size: 1.5em;
+  }
+
+  /* --- Histórico de Pedidos --- */
+  #historico-compras-lista .pedido-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+  #historico-compras-lista .pedido-lista li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+}
+
+/* cadastro */
+
+
+/* feedback */
+/* --- Tablet (Landscape) --- 1024px e abaixo --- */
+@media (min-width:625px) and (max-width: 1024px) {
+  /* --- Cabeçalho --- */
+  .logo {
+    margin-left: 0;
+  }
+  .depoimentos{
+    margin:2rem 1rem;
+  }
+  /* --- Texto --- */
+  .feed .texto5 {
+    padding: 20px 150px 80px 150px;
+  }
+
+  /* --- Rodapé --- */
+  .logo2 {
+    margin-left: 0px;
+  }
+  .cabecalho2 .redes-sociais2 {
+    margin-right: 0px;
+  }
+}
+
+/* --- Tablet (Portrait) --- 768px e abaixo --- */
+@media (max-width: 768px) {
+  /* --- Cabeçalho --- */
+  .cabecalho {
+    flex-direction: column;
+    padding: 20px 0;
+  }
+  .logo {
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+  .cabecalho .redes-sociais {
+    margin-right: 0;
+    margin-top: 15px;
+  }
+  .cabecalho .navecacao .menu {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .cabecalho .navecacao .menu .item {
+    margin: 5px;
+  }
+
+  /* --- Título e Texto --- */
+  .feed .titulo5 {
+    font-size: 50px;
+    text-align: center;
+    padding: 0 20px;
+  }
+  .feed .texto5 {
+    padding: 20px 30px 60px 30px;
+    font-size: 24px;
+  }
+
+  /* --- Depoimentos --- */
+  .depoimentos {
+    max-width: 95%;
+    margin: 2rem auto;
+  }
+  .depoimentos .titulo {
+    font-size: 30px;
+  }
+  .depoimento {
+    font-size: 18px;
+  }
+
+  /* Desativa o hover zoom que é ruim em tablets/mobile */
+  .depoimentos:hover,
+  .depoimento:hover {
+    transform: none;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+  }
+  .depoimento:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  }
+
+  /* --- Rodapé --- */
+  .cabecalho2 {
+    flex-direction: column;
+    padding: 25px 0;
+  }
+  .logo2 {
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+  .cabecalho2 .redes-sociais2 {
+    margin-right: 0;
+    padding: 0;
+    margin-top: 10px;
+  }
+}
+
+/* --- Mobile --- 480px e abaixo --- */
+@media (max-width: 480px) {
+  /* --- Cabeçalho --- */
+  .cabecalho .navecacao .menu {
+    flex-direction: column; /* Empilha os itens do menu */
+    align-items: center;
+  }
+  .cabecalho .navecacao .menu .item {
+    margin: 8px 0;
+    width: 200px;
+    justify-content: center;
+  }
+
+  /* --- Título e Texto --- */
+  .feed .titulo5 {
+    font-size: 40px;
+  }
+  .feed .texto5 {
+    padding: 20px;
+    font-size: 20px;
+  }
+
+  /* --- Depoimentos --- */
+  .depoimentos {
+    padding: 1.5rem 1rem;
+  }
+  .depoimentos .titulo {
+    font-size: 26px;
+  }
+  .depoimento {
+    font-size: 16px;
+    padding: 1rem;
+  }
+  /* Corrige o <p class="texto5"> dentro do depoimento */
+  .depoimento .texto5 {
+    font-size: 16px;
+    padding: 0;
+    color: #000;
+  }
+}
+
+/* feedback */
+

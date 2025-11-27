@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fazer Reserva - OLD GRILL</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Linden+Hill:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/checkout.css">
+    <link rel="stylesheet" href="./src/css/reserva.css"> 
+    <link rel="stylesheet" href="./src/css/carnes.css"> 
+    <link rel="stylesheet" href="./src/css/responsive.css">
+</head>
+<body>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="icon-cart" viewBox="0 0 24 24">
+            <path
+                d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12L8.1 13h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.9 2 1.99 2 2-.9 2-2-.9-2-2-2z" />
+        </symbol>
+    </svg>
+    
+    <header class="cabecalho">
+        <a href="./index.html">
+            <img class="logo" src="./src/IMG/Group 9.png" alt="Logo Old Grill">
+        </a>
+        <nav class="navecacao">
+            <ul class="menu">
+                <li><a href="./index.html#sobre-nós" class="item">Sobre nós</a></li>
+                <li><a href="./index.html#especiarias" class="item">Especiarias</a></li>
+                <li><a href="./carnes.html" class="item">Carnes</a></li>
+                <li><a href="./cadastro.html" class="item">Cadastro</a></li>
+                <li><a href="./feedback.html" class="item">Feedback</a></li>
+            </ul>
+        </nav>
+        <div class="redes-sociais">
+            <a href="./carnes.html?abrirCarrinho=true" class="header-cart-btn"><svg class="imagem">
+                    <use xlink:href="#icon-cart"></use>
+                </svg></a>
+            <a href="#"><img src="./src/IMG/GARFO (1).png" alt="divisor" class="imagem"></a>
+            <a
+                href="https://open.spotify.com/playlist/1IyykrGQHQ0dIYMl7nitM7?si=8f3OXlMSTPCOeReiNOiH6A&pi=e4uI6Dh0RAKU8">
+                <img src="./src/IMG/spotify-logo.png" alt="facebook" class="imagem" />
+            </a>
+            <a href="#"><img src="./src/IMG/GARFO (1).png" alt="divisor" class="imagem"></a>
+            <a href="https://www.instagram.com/old_grill2.3?igsh=MXRqMnJ6YmE2ZHVsaA%3D%3D&utm_source=qr"><img
+                    src="./src/IMG/instagram (1) 1.png" alt="instagram" class="imagem"></a>
+            <a href="#"><img src="./src/IMG/GARFO (1).png" alt="divisor" class="imagem"></a>
+            <a href="https://wa.me/5535991811585"><img src="./src/IMG/whatsapp (3) 1.png" alt="whatsapp"
+                    class="imagem"></a>
+            <a href="#"><img src="./src/IMG/GARFO (1).png" alt="divisor" class="imagem"></a>
+            <a href="#" id="btn-horarios" class="header-clock-btn"><img src="./src/IMG/clock.png" alt=""
+                    class="imagem-relogio"></a>
+        </div>
+    </header>
+
+    <main class="conteudo-principal">
+        <div class="checkout-container">
+            <div class="checkout-form">
+                <form id="form-confirmar-reserva">
+                    
+                    <section id="secao-reserva"> 
+                        <h2>Detalhes da Reserva</h2>
+                        <div class="caixa-grupo">
+                            <div class="caixa">
+                                <label class="nomel" for="reserva-data">Data:<span id="reserva-dia-semana" class="info-dia-semana"></span></label>
+                                <input class="textol" type="date" id="reserva-data" required>
+                            </div>
+                            <div class="caixa">
+                                <label class="nomel" for="reserva-hora">Horário:</label>
+                                <input class="textol" type="time" id="reserva-hora" required>
+                            </div>
+                        </div>
+                       <div class="caixa-grupo">
+    <div class="caixa">
+        <label class="nomel" for="reserva-pessoas">Pessoas:</label>
+        <input class="textol" type="number" id="reserva-pessoas" value="2" min="1" max="30" required> </div>
+    <div class="caixa">
+        <label class="nomel" for="reserva-mesas">Mesas:</label>
+        <input class="textol" type="number" id="reserva-mesas" value="1" min="1" max="10" required readonly> </div>
+</div>
+                        <div class="caixa">
+                            <label class="nomel" for="reserva-observacoes">Observações da Reserva (Opcional):</label>
+                            <input class="textol" type="text" id="reserva-observacoes" placeholder="Ex: Aniversário, pref. perto da janela">
+                        </div>
+                    </section>
+                    
+                    <section class="secao-observacoes" id="secao-obs-pedido">
+                        <h2>Observações do Pedido (Opcional)</h2>
+                        <div class="caixa">
+                            <label class="nomel" for="observacoes">Instruções para a cozinha?</label>
+                            <textarea class="textol" id="observacoes" rows="4" placeholder="Ex: Ponto da carne, sem cebola..."
+                                form="form-confirmar-reserva"></textarea>
+                        </div>
+                    </section>
+
+                    <button class="botao" type="submit">Confirmar Reserva</button>
+                </form>
+            </div>
+
+            <div class="coluna-direita">
+                
+                <div class="resumo-pedido">
+                    <h2>Adiantar Pedido (Opcional)</h2>
+                    <p class="info-reserva">Seu carrinho atual será adicionado à reserva. Você pode adicionar mais itens em <a href="carnes.html?from=reserva">Carnes</a>.</p>
+                    <ul id="lista-resumo-carrinho">
+                        </ul>
+                    <div class="total-resumo">
+                        <span>Total do Pedido:</span>
+                        <strong id="total-resumo-valor">R$ 0,00</strong>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <div id="modal-horarios" class="modal-overlay hidden">
+      <div class="modal-content">
+        <button id="fechar-modal-horarios" class="fechar-modal">×</button>
+        <h2>Horários & Localização</h2>
+        <div id="detalhes-horarios-conteudo">
+          <h3>Horários de Atendimento</h3>
+          <p><strong>Terça a Sexta:</strong> 18:00 - 22:30</p>
+          <p><strong>Sábado:</strong> 16:00 - 23:00</p>
+          <p><strong>Domingos e Feriados:</strong> 10:00 - 16:00</p>
+
+          <h3>Nossa Localização</h3>
+          <p>Rua da Costela, 123 - Bairro Brasa</p>
+          <p>Centro, Balneário Camboriú
+            <a
+              href="https://www.google.com.br/maps/place/Balne%C3%A1rio+Cambori%C3%BA,+SC/@-27.0057719,-48.6581834,13z/data=!3m1!4b1!4m15!1m8!3m7!1s0x94d8b616bc8c3663:0x888ea007f0e0e4f7!2sCentro,+Balne%C3%A1rio+Cambori%C3%BA+-+SC!3b1!8m2!3d-27.0011858!4d-48.6298047!16s%2Fg%2F1ymwj9fyf!3m5!1s0x94d8b65cc2e52aad:0x2dc004f5e6adebc4!8m2!3d-26.9979839!4d-48.63258!16s%2Fg%2F1ymvng0m1?hl=pt-BR&entry=ttu&g_ep=EgoyMDI1MTEwMi4wIKXMDSoASAFQAw%3D%3D"><img
+                class="icone-loc" src="./src/IMG/location (1).png" alt=""></a>
+          </p>
+          <p><em>(Estacionamento disponível no local)</em></p>
+          
+          <a href="reserva.html" class="botao" id="btn-ir-para-reserva">Fazer Reserva</a>
+        </div>
+      </div>
+    </div>
+    
+    <div id="modal-opcoes-ponto" class="modal-overlay hidden">
+        <div class="modal-content">
+            <button id="fechar-modal-opcoes-ponto" class="fechar-modal">×</button>
+            <h2 id="modal-opcoes-titulo-ponto">Escolha o ponto</h2>
+            <form id="form-modal-opcoes-ponto">
+                <div id="modal-opcoes-lista-ponto" class="opcoes-pagamento">
+                    </div>
+                <input type="hidden" id="item-index-ponto" value="">
+                <button class="botao" type="submit" id="btn-confirmar-opcao-ponto">Confirmar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="./src/js/reserva.js"></script>
+    <script src="./src/js/modal-horarios.js"></script>
+</body>
+</html>
